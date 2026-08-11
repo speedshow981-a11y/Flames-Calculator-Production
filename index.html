@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Online Calculators – Flames Calculator</title>
+    <meta name="description" content="Use free online calculators for finance, math, health, everyday calculations and more. Fast, simple, and easy-to-use precision calculation tools on Flames Calculator." />
+    <script>
+      // Make window.fetch writable so external monitoring/preview hooks do not throw TypeError
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          if (_origFetch) {
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() { return _origFetch; },
+              set: function(fn) { _origFetch = fn; }
+            });
+          }
+        } catch (e) {
+          // fallback ignore
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Flames Calculator",
+  "description": "Production-ready, SEO-first multi-tool calculation platform with 217 precision calculators, static pre-rendering, XML sitemaps, schema markup, and AI assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
